@@ -2,4 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import os 
 
-url = "vgmusic.com/music/"
+url = "https://www.vgmusic.com/music/"
+response = requests.get(url)
+print(f"Status code: {response.status_code}",)
