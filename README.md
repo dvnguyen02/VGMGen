@@ -1,6 +1,11 @@
 # VGMGen
 
+![RNNs Structure](https://magenta.tensorflow.org/2016/06/10/recurrent-neural-network-generation-tutorial)
+
 After learning about RNNs, LSTMs, and GRUs from DeepLearning.AI, I was inspired to start this project to deepen my understanding of these concepts. This project focuses on generating video game music using Recurrent Neural Networks (RNNs). Currently, it includes tools for scraping MIDI files from VGMusic.com to use as training data.
+
+![Audio Wave](https://github.com/dvnguyen02/VGMGen/blob/master/images/audio_wave.jpg?raw=true)
+
 
 ## Current Features
 
