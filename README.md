@@ -1,6 +1,6 @@
-# MIDI Music Generation Project
+# VGMGen
 
-This project aims to generate video game music using Recurrent Neural Networks (RNN). Currently, it includes tools for scraping MIDI files from VGMusic.com 
+After learning about RNNs, LSTMs, and GRUs from DeepLearning.AI, I was inspired to start this project to deepen my understanding of these concepts. This project focuses on generating video game music using Recurrent Neural Networks (RNNs). Currently, it includes tools for scraping MIDI files from VGMusic.com to use as training data.
 
 ## Current Features
 
@@ -32,10 +32,11 @@ output_dir = "vgmusic_dataset"
 
 # Start downloading
 downloader.download_all(output_dir)
+
+# To run this code 
+python data_downloader.py # It will automatically download all the audio files from the size, or if you want you could modify to download from a specific console from the code.
 ```
 
-#### VideoGameMusicDownloader
-Main class for handling MIDI file downloads.
 
 Methods:
 - `get_console_links()`: Retrieves links to all console sections
