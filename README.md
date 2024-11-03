@@ -4,13 +4,9 @@ This project aims to generate video game music using Recurrent Neural Networks (
 
 ## Current Features
 
-### Web Scraping Tools
+### Data Downloader:
 - Scrapes MIDI files from VGMusic.com
-- Organizes files by console/system
 - Includes delay between downloads to be server-friendly
-- Handles network errors gracefully
-- Skips existing files for resume capability
-- Provides progress updates and download summary
 
 ### Project Structure
 ```
@@ -19,13 +15,13 @@ project/
 │   ├── nintendo/
 │   ├── sega/
 │   └── ...
-├── scraper.py           # MIDI file scraping script
+├── data_downloader.py           # MIDI file scraping script
 └── README.md            
 ```
 
 ## Usage
 
-### MIDI File Scraper
+### MIDI VGM Downloader
 
 ```python
 # Create downloader instance
@@ -37,13 +33,6 @@ output_dir = "vgmusic_dataset"
 # Start downloading
 downloader.download_all(output_dir)
 ```
-
-Optional: Add `--shutdown` flag to shutdown computer after completion
-```bash
-python scraper.py --shutdown
-```
-
-### Class Documentation
 
 #### VideoGameMusicDownloader
 Main class for handling MIDI file downloads.
@@ -62,8 +51,4 @@ This project is currently under development. Contributions, suggestions, and fee
 ## Notes
 
 - The scraper includes a 1-second delay between downloads to avoid overwhelming the server
-- Failed downloads are logged for later retry
-- Downloads are organized by console for easy navigation
-- Existing files are skipped to allow for interrupted downloads to resume
-
 
